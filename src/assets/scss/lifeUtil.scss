@@ -16,17 +16,9 @@ body,
 html,
 #root {
   width: 100%;
-  overflow: hidden;
-  height: 100vh;
-  max-height: -webkit-fill-available !important;
+  height: 100%;
 }
 
-body {
-  padding-top: constant(safe-area-inset-top);
-  /* iOS 11.0 */
-  padding-top: env(safe-area-inset-top);
-  /* iOS 11+ */
-}
 
 ol,
 ul {
@@ -46,46 +38,7 @@ table {
   height: $height;
 }
 
-// 버튼 패딩 기본 9px 20px
-@mixin default_button_set($padding) {
-  display: inline-block;
-  padding: $padding;
-  border-radius: 5px;
-  color: $white;
-  background-color: $main-color;
-  cursor: pointer;
-  box-shadow: 4px 4px 4px -4px $gray;
-}
 
-@mixin delete_button_set($padding) {
-  display: inline-block;
-  padding: $padding;
-  border-radius: 5px;
-  color: $white;
-  background-color: $delete-color;
-  cursor: pointer;
-  box-shadow: 4px 4px 4px -4px $gray;
-}
-
-@mixin sub_button_set($padding) {
-  display: inline-block;
-  padding: $padding;
-  border-radius: 5px;
-  color: $white;
-  background-color: $sub-color;
-  cursor: pointer;
-  box-shadow: 4px 4px 4px -4px $gray;
-}
-
-@mixin gray_button_set($padding) {
-  display: inline-block;
-  padding: $padding;
-  border-radius: 5px;
-  color: $white;
-  background-color: $gray;
-  cursor: pointer;
-  box-shadow: 4px 4px 4px -4px $gray;
-}
 
 // 색상
 $black: #000000;
@@ -104,83 +57,8 @@ $sub-color_2 : #2F5C00;
 $sub-color: #DBEBCA;
 $modal-color: #9999999f;
 
-@keyframes growDown {
-  0% {
-    transform: scaleY(0);
-  }
 
-  80% {
-    transform: scaleY(1.1);
-  }
-
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-@keyframes growRight {
-  0% {
-    transform: scaleX(0);
-  }
-
-  80% {
-    transform: scaleX(1.1);
-  }
-
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
 
 .w100 {
   width: 100%;
-}
-
-.sortable-handler {
-  touch-action: none;
-}
-
-input {
-  // appearance: none;
-  // -webkit-appearance: none;
-  // -webkit-border-radius: 0;
-  vertical-align: middle;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #fff;
-  color: #000000;
-  vertical-align: middle;
-}
-
-select::-ms-expand {
-  display: none;
 }

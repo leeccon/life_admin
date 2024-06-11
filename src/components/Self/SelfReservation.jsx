@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useReservContext } from "../Context/ReservContext";
 
 const SelfReservation = () => {
-  const { clearReservData, customerData, keepReservData, setSelfUrl, selfUrl } = useReservContext();
+  const { clearReservData, customerData, setSelfUrl, selfUrl } = useReservContext();
   const navigation = useNavigate();
   const location = useLocation();
   const pathname = location.pathname;
@@ -20,8 +20,6 @@ const SelfReservation = () => {
       if (status !== "keep") {
         clearReservData();
         console.log(customerData);
-      } else {
-        keepReservData();
       }
       console.log(customerData);
     } else {

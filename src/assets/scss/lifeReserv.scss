@@ -338,7 +338,7 @@
           display: none;
         }
 
-        .equal_checkbox:checked + .equal_label::before {
+        .equal_checkbox:checked+.equal_label::before {
           background-color: $main-color;
         }
       }
@@ -460,12 +460,10 @@
             .sign {
               width: 100%;
               height: 100%;
-              position: relative;
             }
 
             .sign_canvas {
               width: 100% !important;
-              height: 100% !important;
             }
           }
         }
@@ -541,7 +539,7 @@
           display: none;
         }
 
-        .terms_checkbox:checked + .terms_label::before {
+        .terms_checkbox:checked+.terms_label::before {
           background-color: $main-color;
         }
       }
@@ -701,8 +699,4 @@
       }
     }
   }
-}
-
-.sign_canvas:hover {
-  // cursor: crosshair;
 }

@@ -107,19 +107,6 @@
         }
     }
 
-    .menu_area {
-        box-shadow: none;
-
-        .side_wrap {
-            .side_back {
-                display: none;
-
-                &.mobile {
-                    display: block !important;
-                }
-            }
-        }
-    }
 
 
     .main_area {
@@ -130,18 +117,8 @@
         }
     }
 
-    .modal_wrap {
-        .modal_back {
-            width: 90%;
-        }
-    }
 
-    .header_wrap {
-        .header_top_back {
-            padding: 10px;
-            font-size: 12px;
-        }
-    }
+
 
     .reserv_wrap {
         .back_btn_box {
@@ -279,37 +256,7 @@
         }
     }
 
-    .search_box {
-        padding: 10px !important;
 
-        .list_search {
-            font-size: 13px !important;
-        }
-
-        .search_select {
-            .list_select {
-                font-size: 13px !important;
-            }
-        }
-
-        .search_input {
-
-            .list_input {
-                font-size: 13px !important;
-            }
-
-        }
-    }
-
-    .table_inner_btn {
-        &.reserv {
-            padding: 5px 20px !important;
-
-            &::after {
-                display: none;
-            }
-        }
-    }
 
     .reserv_wrap {
         .reserv_back {
@@ -409,27 +356,6 @@
         }
     }
 
-    .modal_wrap {
-        &.reserv {
-            .modal_back {
-                width: 90% !important;
-                min-width: 0 !important;
-
-                .modal_box {
-                    .modal_text {
-                        font-size: 18px !important;
-                    }
-
-                    .modal_footer_box {
-                        .modal_btn {
-                            padding: 10px 20px !important;
-                            font-size: 13px !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     .reserv_wrap {
         .back_btn_box {
