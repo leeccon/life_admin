@@ -6,7 +6,6 @@ const Reservation = () => {
   const {
     clearReservData,
     customerData,
-    keepReservData,
     setHopeLocation: updateHopeLocation,
   } = useReservContext();
   const navigation = useNavigate();
@@ -30,8 +29,6 @@ const Reservation = () => {
     if (status !== "keep") {
       clearReservData();
       console.log(customerData);
-    } else {
-      keepReservData();
     }
     console.log(customerData);
   }, [status]);
